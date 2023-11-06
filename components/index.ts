@@ -5,8 +5,15 @@ import Footer from "./Footer";
 import CustomFilter from "./CustomFilter";
 import SearchBar from "./SearchBar";
 import SearchManufacturer from "./SearchManufacturer";
+import CardCard from "./CardCard";
 
-export { Hero, CustomButton , Navbar, Footer, CustomFilter, SearchBar,SearchManufacturer
-
-
+export {
+  Hero,
+  CustomButton,
+  Navbar,
+  Footer,
+  CustomFilter,
+  SearchBar,
+  SearchManufacturer,
+  CardCard,
 };
