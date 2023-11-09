@@ -5,6 +5,7 @@ import CustomButton from "./CustomButton";
 import Image from "next/image";
 import { CarProps } from "@/types";
 import { calculateCarRent } from "@/utils";
+import { CarDetails } from ".";
 
 interface CardCardProps {
   car: CarProps;
@@ -62,14 +63,17 @@ const CardCard = ({ car }: CardCardProps) => {
           <CustomButton
             title="More"
             containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
-            textStyles ="text-white text-[14px] leading-[17px] font-bold"
-         handleClick={()=>setIsOpen(true)}
-         rightIcon ='/right-arrow.svg'
-         />
+            textStyles="text-white text-[14px] leading-[17px] font-bold"
+            handleClick={() => setIsOpen(true)}
+            rightIcon="/right-arrow.svg"
+          />
         </div>
       </div>
-      {/* <CardCard/> */}
-      //TODO: Implement a car car 14413
+      <CarDetails
+        isOpen={isOpen}
+        closeModal={() => setIsOpen(false)}
+        car={car}
+      />
     </div>
   );
 };
