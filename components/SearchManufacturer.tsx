@@ -22,7 +22,7 @@ const SearchManufacturer = ({
         );
 
   return (
-    <div className="Search-manufacturer">
+    <div className="search-manufacturer">
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
           <Combobox.Button className="absolute top-[14px]">
@@ -34,7 +34,7 @@ const SearchManufacturer = ({
               className="ml-4"
             />
           </Combobox.Button>
-
+          {/* 21829 */}
           <Combobox.Input
             className="search-manufacturer__input"
             placeholder="Mazda MX-5 Miata "
@@ -64,7 +64,7 @@ const SearchManufacturer = ({
                   <Combobox.Option
                     key={item}
                     className={({ active }) =>
-                      `relative SearchManufacturer__option ${
+                      `relative search-manufacturer__option ${
                         active ? "bg-primary-blue text-white" : "text-gray-900"
                       }`
                     }
