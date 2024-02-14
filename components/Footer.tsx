@@ -17,9 +17,7 @@ const Footer = () => {
             height={18}
             className="object-contain"
           />
-          {/* <p className="text-base text-gray-700">
-            © 2023 Seyram Car Rental. All rights reserved
-          </p> */}
+         
         </div>
         {/* footer links */}
         <div className="footer__links">
