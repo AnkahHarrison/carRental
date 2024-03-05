@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState, Fragment } from "react";
 
 import Image from "next/image";
@@ -9,10 +9,16 @@ const CustomFilter = ({ title, options }: customFilterProps) => {
   const [selected, setSelected] = useState(options[0]);
   return (
     <div className="w-fit">
-      <Listbox>
+      <Listbox value={selected} onChange={(e) => setSelected(e)}>
         <div className="relative w-fit z-10">
           <Listbox.Button className="custom-filter__btn">
-            <span>Filter</span>
+            <span>{selected.title}</span>
+            <Image
+              src="/chevron-up-down.svg"
+              width={20}
+              height={20}
+              alt="chevron"
+            />
           </Listbox.Button>
         </div>
       </Listbox>
